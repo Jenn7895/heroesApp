@@ -84,7 +84,8 @@ export class AgregarComponent implements OnInit {
   borrarHeroe() {
 
     const dialog = this.dialog.open( ConfirmarComponent, { 
-      width: '250px'
+      width: '250px',
+      data: this.heroe
     });
 
     dialog.afterClosed().subscribe(
